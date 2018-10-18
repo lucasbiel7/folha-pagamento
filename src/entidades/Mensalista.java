@@ -20,6 +20,11 @@ public class Mensalista extends Funcionario{
     public double getSalario() {
         return this.salario;
     }
+
+    @Override
+    public double descontoVR() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     

@@ -57,5 +57,10 @@ public abstract class Funcionario {
         this.dependentes = dependentes;
     }
     
+    public double descontoVT(){
+        return getSalario()*0.06;
+    }
+    
+    public abstract double descontoVR();
     
 }

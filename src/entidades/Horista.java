@@ -34,6 +34,11 @@ public class Horista extends Funcionario {
     public double getSalario() {
         return valorHora*horas;
     }
+
+    @Override
+    public double descontoVR() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }
