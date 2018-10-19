@@ -9,13 +9,13 @@ package entidades;
  *
  * @author aluno
  */
-public class Confianca extends Mensalista{
+public class Confianca extends Mensalista {
 
     private double bonus;
-    
+
     @Override
     public double getSalario() {
-        return super.getSalario()*bonus/100;
+        return super.getSalario() * bonus / 100;
     }
 
     public double getBonus() {
@@ -25,7 +25,10 @@ public class Confianca extends Mensalista{
     public void setBonus(double bonus) {
         this.bonus = bonus;
     }
-    
-    
-    
+
+    @Override
+    public double descontoVR() {
+        return 1D;
+    }
+
 }

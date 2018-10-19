@@ -37,6 +37,16 @@ public class Horista extends Funcionario {
 
     @Override
     public double descontoVR() {
+        return getSalario()*18d/100d;
+    }
+
+    @Override
+    public double descontoINSS() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public double getSalarioLiquido() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

@@ -12,7 +12,7 @@ package entidades;
 public class Mensalista extends Funcionario{
 
     @Override
-    public  void setSalario(double salario) {
+    public void setSalario(double salario) {
         super.setSalario(salario); 
     }
 
@@ -23,9 +23,6 @@ public class Mensalista extends Funcionario{
 
     @Override
     public double descontoVR() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return getSalario()*20d/100d;
     }
-    
-    
-    
 }
